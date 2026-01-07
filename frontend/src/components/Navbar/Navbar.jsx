@@ -25,8 +25,9 @@ const Navbar = ({setShowLogin}) => {
   return (
     <div className='navbar'>
         {/* link to open home in navbar */}
-        <Link to={'/'}> <img src={assets.logo} alt="" className="logo" /></Link>
-
+<Link to="/" className="logo-text">
+  Flavour Fusion
+</Link>
         {/* navbar menu */}
         <ul className="navbar-menu">
             <Link to='/' onClick={()=>setMenu('home')} className={menu==='home'?"active":""} >home</Link>
