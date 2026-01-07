@@ -158,4 +158,49 @@
     .navbar-menu{
         display: none;
     }
+}.logo-text {
+  font-family: "Poppins", "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #ff6a2a;
+  text-decoration: none;
+  letter-spacing: 1.2px;
+  line-height: 1.1;
+  display: inline-block;
+
+  /* Fluid responsiveness */
+  font-size: clamp(1.3rem, 4vw, 2.2rem);
+}
+
+/* Subtle brand hover */
+.logo-text:hover {
+  color: #ff5722;
+}
+
+/* Accent underline for logo feel */
+.logo-text::after {
+  content: "";
+  display: block;
+  width: 55%;
+  height: 3px;
+  background-color: #ff6a2a;
+  margin: 6px auto 0;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .logo-text {
+    letter-spacing: 1px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .logo-text {
+    letter-spacing: 0.8px;
+  }
+
+  .logo-text::after {
+    width: 45%;
+    height: 2px;
+  }
 }
