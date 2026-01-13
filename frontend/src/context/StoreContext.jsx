@@ -15,7 +15,7 @@ const StoreContextProvider = (prop) => {
     const [food_list, setFoodList] = useState([])
     const [userId, setUserId] = useState(null)
     // const url='http://localhost:5000'
-    const url = 'https://foodfusionfullstack.onrender.com'
+    const url = 'https://flavorfusion2.onrender.com'
 
 
 
